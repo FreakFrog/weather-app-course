@@ -5,7 +5,7 @@ console.log('Client side javascript file is loaded!')
 
  const getWeather=async function(address){
      
-     let x=await fetch('http://localhost:3000/weather?address='+address)
+     let x=await fetch('/weather?address='+address)
      return x.json()
  }
 
